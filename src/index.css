@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-academy-navy: #0B1F4D;
+  --color-academy-navy-light: #152E63;
+  --color-academy-navy-dark: #071433;
+  --color-academy-gold: #C9A227;
+  --color-academy-gold-light: #DFBA41;
+  --color-academy-gold-dark: #9F7E1E;
+  --color-academy-cream: #FDFCF8;
+  --color-academy-cream-dark: #F5F3E9;
+  --color-academy-ink: #141414;
+  --color-academy-charcoal: #1F2430;
+
+  --font-serif: "Georgia", "Cinzel", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-academy-cream);
+  color: var(--color-academy-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Crisp minimal-style card described in Clean Minimalism */
+.minimal-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(11, 31, 77, 0.1);
+  border-top: 4px solid #C9A227;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.minimal-card:hover {
+  border-color: rgba(11, 31, 77, 0.2);
+  border-top-color: #DFBA41;
+  box-shadow: 0 10px 25px -5px rgba(11, 31, 77, 0.05);
+  transform: translateY(-2px);
+}
+
+.academy-shadow {
+  box-shadow: 0 2px 12px 0 rgba(11, 31, 77, 0.03);
+}
+
+.academy-shadow-lg {
+  box-shadow: 0 10px 30px -5px rgba(11, 31, 77, 0.06);
+}
+
